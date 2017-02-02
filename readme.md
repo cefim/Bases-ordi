@@ -1,0 +1,1 @@
+# Fonctionnement de base d'un ordinateur
