@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Quizz sur le mat&eacute;riel informatique&nbsp;</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.101 / Opale 3.6.020">
+  <meta name="revision" content="2017-02-02 14:40">
+  <link rel="start" href="BasesOrdi.html" title="Fonctions de base d'un ordinateur">
+  <meta name="author" content="Julien Tissier ">
+  <meta name="date" content="16/01/2017">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"iyohokwe"};
+/*1*/ window.scLoadParams = {destUri:"/co/autoEvalMatOrdi_1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin ref">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><script type="text/JavaScript">
+var pdSa8q0dtpdSWXG0XXoKQi_Aswitch = {
+
+	fId : "pdSa8q0dtpdSWXG0XXoKQi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_play"), "visible");
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_pending"), "collapsed");
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_results"), "collapsed");
+
+		break;
+	}
+
+	case "pending" : {
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_play"), "collapsed");
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_pending"), "visible");
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_results"), "collapsed");
+
+		break;
+	}
+
+	case "results" : {
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_play"), "collapsed");
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_pending"), "collapsed");
+scAssmntMgr.setMode(sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_results"), "visible");
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN4c : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "attempt"); 
+window.location.assign("autoEvalMatOrdi_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN79 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+window.location.assign("autoEvalMatOrdi_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN92 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+HPydALu5ozfQZXKQETVvWd_Areset.fct_reset(); 
+window.location.assign("autoEvalMatOrdi_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNc4 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+window.location.assign("autoEvalMatOrdi_3.html");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNdd : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+HPydALu5ozfQZXKQETVvWd_Areset.fct_reset(); 
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "attempt"); 
+window.location.assign("autoEvalMatOrdi_2.html");
+
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.pdSa8q0dtpdSWXG0XXoKQi_Aswitch_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+	case "pending" : {
+
+		break;
+	}
+
+	case "results" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") == "notAttempt" && true) return "play";
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") == "attempt" && true) return "pending";
+	return "results";
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("pdSa8q0dtpdSWXG0XXoKQi_Aswitch_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = pdSa8q0dtpdSWXG0XXoKQi_Aswitch;
+scOnUnloads[scOnUnloads.length] = pdSa8q0dtpdSWXG0XXoKQi_Aswitch;
+</script><div id="pdSa8q0dtpdSWXG0XXoKQi_Aswitch_A" style="display:none;"><div id="pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_play"><p>Vous allez &agrave; pr&eacute;sent effectuer une s&eacute;rie d'exercices d'auto-&eacute;valuation.</p><p>Une synth&egrave;se vous sera pr&eacute;sent&eacute;e &agrave; la fin de cette s&eacute;rie d'exercices.</p><p><a role="button" title="Commencer l'&eacute;valuation..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="pdSa8q0dtpdSWXG0XXoKQi_Aswitch.onActionN4c(this); return false;" class="btnStartE "><span>Commencer le test...</span></a></p></div><div id="pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_pending"><p>Vous avez d&eacute;j&agrave; commenc&eacute; ce test.</p><p> Vos r&eacute;ponses ont &eacute;t&eacute; conserv&eacute;es. Vous pouvez les revoir et poursuivre le test ou les effacer et recommencer le test.</p><p><a role="button" title="Reprendre le test..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="pdSa8q0dtpdSWXG0XXoKQi_Aswitch.onActionN79(this); return false;" class="btnStartE "><span>Reprendre le test...</span></a><a role="button" title="Effacer et recommencer le test..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="pdSa8q0dtpdSWXG0XXoKQi_Aswitch.onActionN92(this); return false;" class="btnRestartE "><span>Effacer et recommencer le test...</span></a></p></div><div id="pdSa8q0dtpdSWXG0XXoKQi_Aswitch_N_results"><p>Vous avez d&eacute;j&agrave; r&eacute;alis&eacute; ce test.</p><p> Vous pouvez de nouveau consulter vos r&eacute;sultats ou effacer vos r&eacute;ponses et recommencer le test.</p><p><a role="button" title="Afficher les r&eacute;sultats..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="pdSa8q0dtpdSWXG0XXoKQi_Aswitch.onActionNc4(this); return false;" class="btnScoreE "><span>Afficher les r&eacute;sultats...</span></a><a role="button" title="Effacer et recommencer le test..." href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="pdSa8q0dtpdSWXG0XXoKQi_Aswitch.onActionNdd(this); return false;" class="btnRestartE "><span>Effacer et recommencer le test...</span></a></p></div></div><script type="text/JavaScript">
+var HPydALu5ozfQZXKQETVvWd_Areset = {
+
+	fId : "HPydALu5ozfQZXKQETVvWd",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+vkqYvgI9p2PPuLnbMgkYe_AresetSub.fct_reset(); 
+QlK4wnRzHmb6SMjc14uwIc_AresetSub.fct_reset(); 
+YGzXRu91EVbFbetuOJp4Ld_AresetSub.fct_reset(); 
+nEP6uyw1bqeqeWbgkBlri_AresetSub.fct_reset(); 
+kfrwsdeocZbNWfi1Tk1hug_AresetSub.fct_reset(); 
+GGPXZcTHfaeDDNV7lbbt8_AresetSub.fct_reset(); 
+i3LzuJW8V6jJoyTNI6SSFb_AresetSub.fct_reset(); 
+ACSsqVqqVti13yiv5JNRfi_AresetSub.fct_reset(); 
+IOVAFQkZj8dLXzYh0LQ0g_AresetSub.fct_reset(); 
+TSuC7AqCAFbxmEmO8lIB1b_AresetSub.fct_reset(); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.HPydALu5ozfQZXKQETVvWd_Areset_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("HPydALu5ozfQZXKQETVvWd_Areset_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = HPydALu5ozfQZXKQETVvWd_Areset;
+scOnUnloads[scOnUnloads.length] = HPydALu5ozfQZXKQETVvWd_Areset;
+</script><div id="HPydALu5ozfQZXKQETVvWd_Areset_A" style="display:none;"><script type="text/JavaScript">
+var vkqYvgI9p2PPuLnbMgkYe_AresetSub = {
+
+	fId : "vkqYvgI9p2PPuLnbMgkYe",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.vkqYvgI9p2PPuLnbMgkYe_AresetSub_form;
+		for (var i=0; i < vForm.vkqYvgI9p2PPuLnbMgkYe_AresetSub_input.length; i++) {
+			vForm.vkqYvgI9p2PPuLnbMgkYe_AresetSub_input[i].disabled = false;
+			vForm.vkqYvgI9p2PPuLnbMgkYe_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("vkqYvgI9p2PPuLnbMgkYe_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.vkqYvgI9p2PPuLnbMgkYe_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.vkqYvgI9p2PPuLnbMgkYe_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("vkqYvgI9p2PPuLnbMgkYe_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = vkqYvgI9p2PPuLnbMgkYe_AresetSub;
+scOnUnloads[scOnUnloads.length] = vkqYvgI9p2PPuLnbMgkYe_AresetSub;
+</script><div id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_A" style="display:none;"><form action name="vkqYvgI9p2PPuLnbMgkYe_AresetSub_form" id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_form"><ul id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_N_input"><li><div><input type="radio" name="vkqYvgI9p2PPuLnbMgkYe_AresetSub_input" id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_in0" value="0" onclick="vkqYvgI9p2PPuLnbMgkYe_AresetSub.setResp(this, 0);" aria-labelledby="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl0"></div><div id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl0"></div></li><li><div><input type="radio" name="vkqYvgI9p2PPuLnbMgkYe_AresetSub_input" id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_in1" value="1" onclick="vkqYvgI9p2PPuLnbMgkYe_AresetSub.setResp(this, 1);" aria-labelledby="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl1"></div><div id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl1"></div></li><li><div><input type="radio" name="vkqYvgI9p2PPuLnbMgkYe_AresetSub_input" id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_in2" value="2" onclick="vkqYvgI9p2PPuLnbMgkYe_AresetSub.setResp(this, 2);" aria-labelledby="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl2"></div><div id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl2"></div></li><li><div><input type="radio" name="vkqYvgI9p2PPuLnbMgkYe_AresetSub_input" id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_in3" value="3" onclick="vkqYvgI9p2PPuLnbMgkYe_AresetSub.setResp(this, 3);" aria-labelledby="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl3"></div><div id="vkqYvgI9p2PPuLnbMgkYe_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var QlK4wnRzHmb6SMjc14uwIc_AresetSub = {
+
+	fId : "QlK4wnRzHmb6SMjc14uwIc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.QlK4wnRzHmb6SMjc14uwIc_AresetSub_form;
+		for (var i=0; i < vForm.QlK4wnRzHmb6SMjc14uwIc_AresetSub_input.length; i++) {
+			vForm.QlK4wnRzHmb6SMjc14uwIc_AresetSub_input[i].disabled = false;
+			vForm.QlK4wnRzHmb6SMjc14uwIc_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("QlK4wnRzHmb6SMjc14uwIc_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.QlK4wnRzHmb6SMjc14uwIc_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.QlK4wnRzHmb6SMjc14uwIc_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("QlK4wnRzHmb6SMjc14uwIc_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = QlK4wnRzHmb6SMjc14uwIc_AresetSub;
+scOnUnloads[scOnUnloads.length] = QlK4wnRzHmb6SMjc14uwIc_AresetSub;
+</script><div id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_A" style="display:none;"><form action name="QlK4wnRzHmb6SMjc14uwIc_AresetSub_form" id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_form"><ul id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_N_input"><li><div><input type="radio" name="QlK4wnRzHmb6SMjc14uwIc_AresetSub_input" id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_in0" value="0" onclick="QlK4wnRzHmb6SMjc14uwIc_AresetSub.setResp(this, 0);" aria-labelledby="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl0"></div><div id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl0"></div></li><li><div><input type="radio" name="QlK4wnRzHmb6SMjc14uwIc_AresetSub_input" id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_in1" value="1" onclick="QlK4wnRzHmb6SMjc14uwIc_AresetSub.setResp(this, 1);" aria-labelledby="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl1"></div><div id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl1"></div></li><li><div><input type="radio" name="QlK4wnRzHmb6SMjc14uwIc_AresetSub_input" id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_in2" value="2" onclick="QlK4wnRzHmb6SMjc14uwIc_AresetSub.setResp(this, 2);" aria-labelledby="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl2"></div><div id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl2"></div></li><li><div><input type="radio" name="QlK4wnRzHmb6SMjc14uwIc_AresetSub_input" id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_in3" value="3" onclick="QlK4wnRzHmb6SMjc14uwIc_AresetSub.setResp(this, 3);" aria-labelledby="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl3"></div><div id="QlK4wnRzHmb6SMjc14uwIc_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var YGzXRu91EVbFbetuOJp4Ld_AresetSub = {
+
+	fId : "YGzXRu91EVbFbetuOJp4Ld",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.YGzXRu91EVbFbetuOJp4Ld_AresetSub_form;
+		for (var i=0; i < vForm.YGzXRu91EVbFbetuOJp4Ld_AresetSub_input.length; i++) {
+			vForm.YGzXRu91EVbFbetuOJp4Ld_AresetSub_input[i].disabled = false;
+			vForm.YGzXRu91EVbFbetuOJp4Ld_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("YGzXRu91EVbFbetuOJp4Ld_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.YGzXRu91EVbFbetuOJp4Ld_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.YGzXRu91EVbFbetuOJp4Ld_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("YGzXRu91EVbFbetuOJp4Ld_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = YGzXRu91EVbFbetuOJp4Ld_AresetSub;
+scOnUnloads[scOnUnloads.length] = YGzXRu91EVbFbetuOJp4Ld_AresetSub;
+</script><div id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_A" style="display:none;"><form action name="YGzXRu91EVbFbetuOJp4Ld_AresetSub_form" id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_form"><ul id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_N_input"><li><div><input type="radio" name="YGzXRu91EVbFbetuOJp4Ld_AresetSub_input" id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_in0" value="0" onclick="YGzXRu91EVbFbetuOJp4Ld_AresetSub.setResp(this, 0);" aria-labelledby="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl0"></div><div id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl0"></div></li><li><div><input type="radio" name="YGzXRu91EVbFbetuOJp4Ld_AresetSub_input" id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_in1" value="1" onclick="YGzXRu91EVbFbetuOJp4Ld_AresetSub.setResp(this, 1);" aria-labelledby="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl1"></div><div id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl1"></div></li><li><div><input type="radio" name="YGzXRu91EVbFbetuOJp4Ld_AresetSub_input" id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_in2" value="2" onclick="YGzXRu91EVbFbetuOJp4Ld_AresetSub.setResp(this, 2);" aria-labelledby="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl2"></div><div id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl2"></div></li><li><div><input type="radio" name="YGzXRu91EVbFbetuOJp4Ld_AresetSub_input" id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_in3" value="3" onclick="YGzXRu91EVbFbetuOJp4Ld_AresetSub.setResp(this, 3);" aria-labelledby="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl3"></div><div id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl3"></div></li><li><div><input type="radio" name="YGzXRu91EVbFbetuOJp4Ld_AresetSub_input" id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_in4" value="4" onclick="YGzXRu91EVbFbetuOJp4Ld_AresetSub.setResp(this, 4);" aria-labelledby="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl4"></div><div id="YGzXRu91EVbFbetuOJp4Ld_AresetSub_lbl4"></div></li></ul></form></div><script type="text/JavaScript">
+var nEP6uyw1bqeqeWbgkBlri_AresetSub = {
+
+	fId : "nEP6uyw1bqeqeWbgkBlri",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.nEP6uyw1bqeqeWbgkBlri_AresetSub_form;
+		for (var i=0; i < vForm.nEP6uyw1bqeqeWbgkBlri_AresetSub_input.length; i++) {
+			vForm.nEP6uyw1bqeqeWbgkBlri_AresetSub_input[i].disabled = false;
+			vForm.nEP6uyw1bqeqeWbgkBlri_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("nEP6uyw1bqeqeWbgkBlri_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.nEP6uyw1bqeqeWbgkBlri_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.nEP6uyw1bqeqeWbgkBlri_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("nEP6uyw1bqeqeWbgkBlri_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = nEP6uyw1bqeqeWbgkBlri_AresetSub;
+scOnUnloads[scOnUnloads.length] = nEP6uyw1bqeqeWbgkBlri_AresetSub;
+</script><div id="nEP6uyw1bqeqeWbgkBlri_AresetSub_A" style="display:none;"><form action name="nEP6uyw1bqeqeWbgkBlri_AresetSub_form" id="nEP6uyw1bqeqeWbgkBlri_AresetSub_form"><ul id="nEP6uyw1bqeqeWbgkBlri_AresetSub_N_input"><li><div><input type="radio" name="nEP6uyw1bqeqeWbgkBlri_AresetSub_input" id="nEP6uyw1bqeqeWbgkBlri_AresetSub_in0" value="0" onclick="nEP6uyw1bqeqeWbgkBlri_AresetSub.setResp(this, 0);" aria-labelledby="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl0"></div><div id="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl0"></div></li><li><div><input type="radio" name="nEP6uyw1bqeqeWbgkBlri_AresetSub_input" id="nEP6uyw1bqeqeWbgkBlri_AresetSub_in1" value="1" onclick="nEP6uyw1bqeqeWbgkBlri_AresetSub.setResp(this, 1);" aria-labelledby="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl1"></div><div id="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl1"></div></li><li><div><input type="radio" name="nEP6uyw1bqeqeWbgkBlri_AresetSub_input" id="nEP6uyw1bqeqeWbgkBlri_AresetSub_in2" value="2" onclick="nEP6uyw1bqeqeWbgkBlri_AresetSub.setResp(this, 2);" aria-labelledby="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl2"></div><div id="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl2"></div></li><li><div><input type="radio" name="nEP6uyw1bqeqeWbgkBlri_AresetSub_input" id="nEP6uyw1bqeqeWbgkBlri_AresetSub_in3" value="3" onclick="nEP6uyw1bqeqeWbgkBlri_AresetSub.setResp(this, 3);" aria-labelledby="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl3"></div><div id="nEP6uyw1bqeqeWbgkBlri_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var kfrwsdeocZbNWfi1Tk1hug_AresetSub = {
+
+	fId : "kfrwsdeocZbNWfi1Tk1hug",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.kfrwsdeocZbNWfi1Tk1hug_AresetSub_form;
+		for (var i=0; i < vForm.kfrwsdeocZbNWfi1Tk1hug_AresetSub_input.length; i++) {
+			vForm.kfrwsdeocZbNWfi1Tk1hug_AresetSub_input[i].disabled = false;
+			vForm.kfrwsdeocZbNWfi1Tk1hug_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("kfrwsdeocZbNWfi1Tk1hug_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kfrwsdeocZbNWfi1Tk1hug_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.kfrwsdeocZbNWfi1Tk1hug_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kfrwsdeocZbNWfi1Tk1hug_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kfrwsdeocZbNWfi1Tk1hug_AresetSub;
+scOnUnloads[scOnUnloads.length] = kfrwsdeocZbNWfi1Tk1hug_AresetSub;
+</script><div id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_A" style="display:none;"><form action name="kfrwsdeocZbNWfi1Tk1hug_AresetSub_form" id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_form"><ul id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_N_input"><li><div><input type="radio" name="kfrwsdeocZbNWfi1Tk1hug_AresetSub_input" id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_in0" value="0" onclick="kfrwsdeocZbNWfi1Tk1hug_AresetSub.setResp(this, 0);" aria-labelledby="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl0"></div><div id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl0"></div></li><li><div><input type="radio" name="kfrwsdeocZbNWfi1Tk1hug_AresetSub_input" id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_in1" value="1" onclick="kfrwsdeocZbNWfi1Tk1hug_AresetSub.setResp(this, 1);" aria-labelledby="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl1"></div><div id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl1"></div></li><li><div><input type="radio" name="kfrwsdeocZbNWfi1Tk1hug_AresetSub_input" id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_in2" value="2" onclick="kfrwsdeocZbNWfi1Tk1hug_AresetSub.setResp(this, 2);" aria-labelledby="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl2"></div><div id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl2"></div></li><li><div><input type="radio" name="kfrwsdeocZbNWfi1Tk1hug_AresetSub_input" id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_in3" value="3" onclick="kfrwsdeocZbNWfi1Tk1hug_AresetSub.setResp(this, 3);" aria-labelledby="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl3"></div><div id="kfrwsdeocZbNWfi1Tk1hug_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var GGPXZcTHfaeDDNV7lbbt8_AresetSub = {
+
+	fId : "GGPXZcTHfaeDDNV7lbbt8",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.GGPXZcTHfaeDDNV7lbbt8_AresetSub_form;
+		for (var i=0; i < vForm.GGPXZcTHfaeDDNV7lbbt8_AresetSub_input.length; i++) {
+			vForm.GGPXZcTHfaeDDNV7lbbt8_AresetSub_input[i].disabled = false;
+			vForm.GGPXZcTHfaeDDNV7lbbt8_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("GGPXZcTHfaeDDNV7lbbt8_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.GGPXZcTHfaeDDNV7lbbt8_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.GGPXZcTHfaeDDNV7lbbt8_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("GGPXZcTHfaeDDNV7lbbt8_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = GGPXZcTHfaeDDNV7lbbt8_AresetSub;
+scOnUnloads[scOnUnloads.length] = GGPXZcTHfaeDDNV7lbbt8_AresetSub;
+</script><div id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_A" style="display:none;"><form action name="GGPXZcTHfaeDDNV7lbbt8_AresetSub_form" id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_form"><ul id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_N_input"><li><div><input type="radio" name="GGPXZcTHfaeDDNV7lbbt8_AresetSub_input" id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_in0" value="0" onclick="GGPXZcTHfaeDDNV7lbbt8_AresetSub.setResp(this, 0);" aria-labelledby="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl0"></div><div id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl0"></div></li><li><div><input type="radio" name="GGPXZcTHfaeDDNV7lbbt8_AresetSub_input" id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_in1" value="1" onclick="GGPXZcTHfaeDDNV7lbbt8_AresetSub.setResp(this, 1);" aria-labelledby="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl1"></div><div id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl1"></div></li><li><div><input type="radio" name="GGPXZcTHfaeDDNV7lbbt8_AresetSub_input" id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_in2" value="2" onclick="GGPXZcTHfaeDDNV7lbbt8_AresetSub.setResp(this, 2);" aria-labelledby="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl2"></div><div id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl2"></div></li><li><div><input type="radio" name="GGPXZcTHfaeDDNV7lbbt8_AresetSub_input" id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_in3" value="3" onclick="GGPXZcTHfaeDDNV7lbbt8_AresetSub.setResp(this, 3);" aria-labelledby="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl3"></div><div id="GGPXZcTHfaeDDNV7lbbt8_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var i3LzuJW8V6jJoyTNI6SSFb_AresetSub = {
+
+	fId : "i3LzuJW8V6jJoyTNI6SSFb",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.i3LzuJW8V6jJoyTNI6SSFb_AresetSub_form;
+		for (var i=0; i < vForm.i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input.length; i++) {
+			vForm.i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input[i].disabled = false;
+			vForm.i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("i3LzuJW8V6jJoyTNI6SSFb_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.i3LzuJW8V6jJoyTNI6SSFb_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.i3LzuJW8V6jJoyTNI6SSFb_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("i3LzuJW8V6jJoyTNI6SSFb_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = i3LzuJW8V6jJoyTNI6SSFb_AresetSub;
+scOnUnloads[scOnUnloads.length] = i3LzuJW8V6jJoyTNI6SSFb_AresetSub;
+</script><div id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_A" style="display:none;"><form action name="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_form" id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_form"><ul id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_N_input"><li><div><input type="radio" name="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input" id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_in0" value="0" onclick="i3LzuJW8V6jJoyTNI6SSFb_AresetSub.setResp(this, 0);" aria-labelledby="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl0"></div><div id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl0"></div></li><li><div><input type="radio" name="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input" id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_in1" value="1" onclick="i3LzuJW8V6jJoyTNI6SSFb_AresetSub.setResp(this, 1);" aria-labelledby="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl1"></div><div id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl1"></div></li><li><div><input type="radio" name="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input" id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_in2" value="2" onclick="i3LzuJW8V6jJoyTNI6SSFb_AresetSub.setResp(this, 2);" aria-labelledby="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl2"></div><div id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl2"></div></li><li><div><input type="radio" name="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input" id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_in3" value="3" onclick="i3LzuJW8V6jJoyTNI6SSFb_AresetSub.setResp(this, 3);" aria-labelledby="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl3"></div><div id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl3"></div></li><li><div><input type="radio" name="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_input" id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_in4" value="4" onclick="i3LzuJW8V6jJoyTNI6SSFb_AresetSub.setResp(this, 4);" aria-labelledby="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl4"></div><div id="i3LzuJW8V6jJoyTNI6SSFb_AresetSub_lbl4"></div></li></ul></form></div><script type="text/JavaScript">
+var ACSsqVqqVti13yiv5JNRfi_AresetSub = {
+
+	fId : "ACSsqVqqVti13yiv5JNRfi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.ACSsqVqqVti13yiv5JNRfi_AresetSub_form;
+		for (var i=0; i < vForm.ACSsqVqqVti13yiv5JNRfi_AresetSub_input.length; i++) {
+			vForm.ACSsqVqqVti13yiv5JNRfi_AresetSub_input[i].disabled = false;
+			vForm.ACSsqVqqVti13yiv5JNRfi_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("ACSsqVqqVti13yiv5JNRfi_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.ACSsqVqqVti13yiv5JNRfi_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.ACSsqVqqVti13yiv5JNRfi_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("ACSsqVqqVti13yiv5JNRfi_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = ACSsqVqqVti13yiv5JNRfi_AresetSub;
+scOnUnloads[scOnUnloads.length] = ACSsqVqqVti13yiv5JNRfi_AresetSub;
+</script><div id="ACSsqVqqVti13yiv5JNRfi_AresetSub_A" style="display:none;"><form action name="ACSsqVqqVti13yiv5JNRfi_AresetSub_form" id="ACSsqVqqVti13yiv5JNRfi_AresetSub_form"><ul id="ACSsqVqqVti13yiv5JNRfi_AresetSub_N_input"><li><div><input type="radio" name="ACSsqVqqVti13yiv5JNRfi_AresetSub_input" id="ACSsqVqqVti13yiv5JNRfi_AresetSub_in0" value="0" onclick="ACSsqVqqVti13yiv5JNRfi_AresetSub.setResp(this, 0);" aria-labelledby="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl0"></div><div id="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl0"></div></li><li><div><input type="radio" name="ACSsqVqqVti13yiv5JNRfi_AresetSub_input" id="ACSsqVqqVti13yiv5JNRfi_AresetSub_in1" value="1" onclick="ACSsqVqqVti13yiv5JNRfi_AresetSub.setResp(this, 1);" aria-labelledby="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl1"></div><div id="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl1"></div></li><li><div><input type="radio" name="ACSsqVqqVti13yiv5JNRfi_AresetSub_input" id="ACSsqVqqVti13yiv5JNRfi_AresetSub_in2" value="2" onclick="ACSsqVqqVti13yiv5JNRfi_AresetSub.setResp(this, 2);" aria-labelledby="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl2"></div><div id="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl2"></div></li><li><div><input type="radio" name="ACSsqVqqVti13yiv5JNRfi_AresetSub_input" id="ACSsqVqqVti13yiv5JNRfi_AresetSub_in3" value="3" onclick="ACSsqVqqVti13yiv5JNRfi_AresetSub.setResp(this, 3);" aria-labelledby="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl3"></div><div id="ACSsqVqqVti13yiv5JNRfi_AresetSub_lbl3"></div></li></ul></form></div><script type="text/JavaScript">
+var IOVAFQkZj8dLXzYh0LQ0g_AresetSub = {
+
+	fId : "IOVAFQkZj8dLXzYh0LQ0g",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.IOVAFQkZj8dLXzYh0LQ0g_AresetSub_form;
+		for (var i=0; i < vForm.IOVAFQkZj8dLXzYh0LQ0g_AresetSub_input.length; i++) {
+			vForm.IOVAFQkZj8dLXzYh0LQ0g_AresetSub_input[i].disabled = false;
+			vForm.IOVAFQkZj8dLXzYh0LQ0g_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("IOVAFQkZj8dLXzYh0LQ0g_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.IOVAFQkZj8dLXzYh0LQ0g_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.IOVAFQkZj8dLXzYh0LQ0g_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("IOVAFQkZj8dLXzYh0LQ0g_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = IOVAFQkZj8dLXzYh0LQ0g_AresetSub;
+scOnUnloads[scOnUnloads.length] = IOVAFQkZj8dLXzYh0LQ0g_AresetSub;
+</script><div id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_A" style="display:none;"><form action name="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_form" id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_form"><ul id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_N_input"><li><div><input type="radio" name="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_input" id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_in0" value="0" onclick="IOVAFQkZj8dLXzYh0LQ0g_AresetSub.setResp(this, 0);" aria-labelledby="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_lbl0"></div><div id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_lbl0"></div></li><li><div><input type="radio" name="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_input" id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_in1" value="1" onclick="IOVAFQkZj8dLXzYh0LQ0g_AresetSub.setResp(this, 1);" aria-labelledby="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_lbl1"></div><div id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_lbl1"></div></li><li><div><input type="radio" name="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_input" id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_in2" value="2" onclick="IOVAFQkZj8dLXzYh0LQ0g_AresetSub.setResp(this, 2);" aria-labelledby="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_lbl2"></div><div id="IOVAFQkZj8dLXzYh0LQ0g_AresetSub_lbl2"></div></li></ul></form></div><script type="text/JavaScript">
+var TSuC7AqCAFbxmEmO8lIB1b_AresetSub = {
+
+	fId : "TSuC7AqCAFbxmEmO8lIB1b",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.TSuC7AqCAFbxmEmO8lIB1b_AresetSub_form;
+		for (var i=0; i < vForm.TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input.length; i++) {
+			vForm.TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input[i].disabled = false;
+			vForm.TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input[i].checked = false;
+		}
+
+var vLoadRespSession = null;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("TSuC7AqCAFbxmEmO8lIB1b_AresetSub_N_input"), "collapsed");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_reset : function(){
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "notAttempt"); 
+var vSess="eval";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.TSuC7AqCAFbxmEmO8lIB1b_AresetSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.TSuC7AqCAFbxmEmO8lIB1b_AresetSub_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("TSuC7AqCAFbxmEmO8lIB1b_AresetSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = TSuC7AqCAFbxmEmO8lIB1b_AresetSub;
+scOnUnloads[scOnUnloads.length] = TSuC7AqCAFbxmEmO8lIB1b_AresetSub;
+</script><div id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_A" style="display:none;"><form action name="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_form" id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_form"><ul id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_N_input"><li><div><input type="radio" name="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input" id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_in0" value="0" onclick="TSuC7AqCAFbxmEmO8lIB1b_AresetSub.setResp(this, 0);" aria-labelledby="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl0"></div><div id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl0"></div></li><li><div><input type="radio" name="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input" id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_in1" value="1" onclick="TSuC7AqCAFbxmEmO8lIB1b_AresetSub.setResp(this, 1);" aria-labelledby="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl1"></div><div id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl1"></div></li><li><div><input type="radio" name="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input" id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_in2" value="2" onclick="TSuC7AqCAFbxmEmO8lIB1b_AresetSub.setResp(this, 2);" aria-labelledby="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl2"></div><div id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl2"></div></li><li><div><input type="radio" name="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_input" id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_in3" value="3" onclick="TSuC7AqCAFbxmEmO8lIB1b_AresetSub.setResp(this, 3);" aria-labelledby="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl3"></div><div id="TSuC7AqCAFbxmEmO8lIB1b_AresetSub_lbl3"></div></li></ul></form></div></div></div></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer");scImgMgr.init();</script>
+ </body>
+</html>

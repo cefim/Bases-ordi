@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Solution d'exercice</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.101 / Opale 3.6.020">
+  <meta name="revision" content="2017-02-02 14:40">
+  <link rel="start" href="BasesOrdi.html" title="Fonctions de base d'un ordinateur">
+  <meta name="author" content="Julien Tissier ">
+  <meta name="date" content="16/01/2017">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"iyohokwe"};
+/*1*/ window.scLoadParams = {destUri:"/co/autoEvalOS_5.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article result"><div class="hBk_co "><div class="coQuiz "><div class="coQuizQuest "></div><div class="coQuizList "><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var kwH23o4FAcbPDIAwoeJTYh_Asol = {
+
+	fId : "kwH23o4FAcbPDIAwoeJTYh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Asol_form;
+		for (var i=0; i < vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_input.length; i++) {
+			vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_input[i].disabled = true;
+			vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kwH23o4FAcbPDIAwoeJTYh_Asol_in"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("kwH23o4FAcbPDIAwoeJTYh_Asol_N_responseTi"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("kwH23o4FAcbPDIAwoeJTYh_Asol_SN42");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Asol_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 4);
+				vForm.kwH23o4FAcbPDIAwoeJTYh_Asol_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kwH23o4FAcbPDIAwoeJTYh_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kwH23o4FAcbPDIAwoeJTYh_Asol;
+scOnUnloads[scOnUnloads.length] = kwH23o4FAcbPDIAwoeJTYh_Asol;
+</script><div id="kwH23o4FAcbPDIAwoeJTYh_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h4 class="question_ti"><span>&Eacute;nonc&eacute;</span></h4><div class="rBk "><p>Microsoft a d&eacute;velopp&eacute;&nbsp;: </p></div></div><div class="score"><h4 class="score_ti"><span>R&eacute;sultat</span></h4><div class="scoreEval " aria-live="polite"><div id="kwH23o4FAcbPDIAwoeJTYh_Asol_SN42"><span></span></div></div></div><div class="sol"><h4 class="sol_ti"><span>Correction</span></h4><div id="kwH23o4FAcbPDIAwoeJTYh_Asol_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></div><form action name="kwH23o4FAcbPDIAwoeJTYh_Asol_form" id="kwH23o4FAcbPDIAwoeJTYh_Asol_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_input" id="kwH23o4FAcbPDIAwoeJTYh_Asol_in0" value="0" onclick="kwH23o4FAcbPDIAwoeJTYh_Asol.setResp(this, 0);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_sol" id="kwH23o4FAcbPDIAwoeJTYh_Asol_sol0" value disabled aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl0"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl0"><div class="choice"><div class="label"><p>Ubuntu</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_input" id="kwH23o4FAcbPDIAwoeJTYh_Asol_in1" value="1" onclick="kwH23o4FAcbPDIAwoeJTYh_Asol.setResp(this, 1);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_sol" id="kwH23o4FAcbPDIAwoeJTYh_Asol_sol1" value disabled aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl1"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl1"><div class="choice"><div class="label"><p>Android</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_input" id="kwH23o4FAcbPDIAwoeJTYh_Asol_in2" value="2" onclick="kwH23o4FAcbPDIAwoeJTYh_Asol.setResp(this, 2);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_sol" id="kwH23o4FAcbPDIAwoeJTYh_Asol_sol2" value disabled aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl2"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl2"><div class="choice"><div class="label"><p>Logitech</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_input" id="kwH23o4FAcbPDIAwoeJTYh_Asol_in3" value="3" onclick="kwH23o4FAcbPDIAwoeJTYh_Asol.setResp(this, 3);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl3"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_sol" id="kwH23o4FAcbPDIAwoeJTYh_Asol_sol3" value disabled aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl3"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl3"><div class="choice"><div class="label"><p>Windows</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_input" id="kwH23o4FAcbPDIAwoeJTYh_Asol_in4" value="4" onclick="kwH23o4FAcbPDIAwoeJTYh_Asol.setResp(this, 4);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl4"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Asol_sol" id="kwH23o4FAcbPDIAwoeJTYh_Asol_sol4" value disabled aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl4"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Asol_lbl4"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var IVXQzgxrkKf0ybywmbUKwf_Asol = {
+
+	fId : "IVXQzgxrkKf0ybywmbUKwf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Asol_form;
+		for (var i=0; i < vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_input.length; i++) {
+			vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_input[i].disabled = true;
+			vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("IVXQzgxrkKf0ybywmbUKwf_Asol_in"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("IVXQzgxrkKf0ybywmbUKwf_Asol_N_responseTi"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("IVXQzgxrkKf0ybywmbUKwf_Asol_SN42");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Asol_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 4);
+				vForm.IVXQzgxrkKf0ybywmbUKwf_Asol_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("IVXQzgxrkKf0ybywmbUKwf_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = IVXQzgxrkKf0ybywmbUKwf_Asol;
+scOnUnloads[scOnUnloads.length] = IVXQzgxrkKf0ybywmbUKwf_Asol;
+</script><div id="IVXQzgxrkKf0ybywmbUKwf_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h4 class="question_ti"><span>&Eacute;nonc&eacute;</span></h4><div class="rBk "><p>Laquelle de ces versions de Windows n'a jamais exist&eacute;&nbsp;? </p></div></div><div class="score"><h4 class="score_ti"><span>R&eacute;sultat</span></h4><div class="scoreEval " aria-live="polite"><div id="IVXQzgxrkKf0ybywmbUKwf_Asol_SN42"><span></span></div></div></div><div class="sol"><h4 class="sol_ti"><span>Correction</span></h4><div id="IVXQzgxrkKf0ybywmbUKwf_Asol_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></div><form action name="IVXQzgxrkKf0ybywmbUKwf_Asol_form" id="IVXQzgxrkKf0ybywmbUKwf_Asol_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_input" id="IVXQzgxrkKf0ybywmbUKwf_Asol_in0" value="0" onclick="IVXQzgxrkKf0ybywmbUKwf_Asol.setResp(this, 0);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_sol" id="IVXQzgxrkKf0ybywmbUKwf_Asol_sol0" value disabled aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl0"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl0"><div class="choice"><div class="label"><p>Windows 3.1</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_input" id="IVXQzgxrkKf0ybywmbUKwf_Asol_in1" value="1" onclick="IVXQzgxrkKf0ybywmbUKwf_Asol.setResp(this, 1);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_sol" id="IVXQzgxrkKf0ybywmbUKwf_Asol_sol1" value disabled aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl1"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl1"><div class="choice"><div class="label"><p>Windows millenium</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_input" id="IVXQzgxrkKf0ybywmbUKwf_Asol_in2" value="2" onclick="IVXQzgxrkKf0ybywmbUKwf_Asol.setResp(this, 2);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_sol" id="IVXQzgxrkKf0ybywmbUKwf_Asol_sol2" value disabled aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl2"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl2"><div class="choice"><div class="label"><p>Windows Server 2008</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_input" id="IVXQzgxrkKf0ybywmbUKwf_Asol_in3" value="3" onclick="IVXQzgxrkKf0ybywmbUKwf_Asol.setResp(this, 3);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl3"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_sol" id="IVXQzgxrkKf0ybywmbUKwf_Asol_sol3" value disabled aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl3"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl3"><div class="choice"><div class="label"><p>Windows 9</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_input" id="IVXQzgxrkKf0ybywmbUKwf_Asol_in4" value="4" onclick="IVXQzgxrkKf0ybywmbUKwf_Asol.setResp(this, 4);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl4"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Asol_sol" id="IVXQzgxrkKf0ybywmbUKwf_Asol_sol4" value disabled aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl4"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Asol_lbl4"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var nKIcY3gQe8kWKOBXIG2LDb_Asol = {
+
+	fId : "nKIcY3gQe8kWKOBXIG2LDb",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Asol_form;
+		for (var i=0; i < vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_input.length; i++) {
+			vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_input[i].disabled = true;
+			vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("nKIcY3gQe8kWKOBXIG2LDb_Asol_in"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("nKIcY3gQe8kWKOBXIG2LDb_Asol_N_responseTi"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("nKIcY3gQe8kWKOBXIG2LDb_Asol_SN42");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Asol_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 4);
+				vForm.nKIcY3gQe8kWKOBXIG2LDb_Asol_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("nKIcY3gQe8kWKOBXIG2LDb_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = nKIcY3gQe8kWKOBXIG2LDb_Asol;
+scOnUnloads[scOnUnloads.length] = nKIcY3gQe8kWKOBXIG2LDb_Asol;
+</script><div id="nKIcY3gQe8kWKOBXIG2LDb_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h4 class="question_ti"><span>&Eacute;nonc&eacute;</span></h4><div class="rBk "><p>Quel est le prix de Linux&nbsp;? </p></div></div><div class="score"><h4 class="score_ti"><span>R&eacute;sultat</span></h4><div class="scoreEval " aria-live="polite"><div id="nKIcY3gQe8kWKOBXIG2LDb_Asol_SN42"><span></span></div></div></div><div class="sol"><h4 class="sol_ti"><span>Correction</span></h4><div id="nKIcY3gQe8kWKOBXIG2LDb_Asol_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></div><form action name="nKIcY3gQe8kWKOBXIG2LDb_Asol_form" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_input" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_in0" value="0" onclick="nKIcY3gQe8kWKOBXIG2LDb_Asol.setResp(this, 0);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol0" value disabled aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl0"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl0"><div class="choice"><div class="label"><p>comme Windows, environ 150 &euro;</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_input" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_in1" value="1" onclick="nKIcY3gQe8kWKOBXIG2LDb_Asol.setResp(this, 1);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol1" value disabled aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl1"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl1"><div class="choice"><div class="label"><p>environ 10&euro;</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_input" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_in2" value="2" onclick="nKIcY3gQe8kWKOBXIG2LDb_Asol.setResp(this, 2);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol2" value disabled aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl2"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl2"><div class="choice"><div class="label"><p>environ 50 &euro;</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_input" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_in3" value="3" onclick="nKIcY3gQe8kWKOBXIG2LDb_Asol.setResp(this, 3);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl3"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol3" value disabled aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl3"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl3"><div class="choice"><div class="label"><p>Il est gratuit </p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_input" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_in4" value="4" onclick="nKIcY3gQe8kWKOBXIG2LDb_Asol.setResp(this, 4);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl4"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol" id="nKIcY3gQe8kWKOBXIG2LDb_Asol_sol4" value disabled aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl4"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Asol_lbl4"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var OPOBWjKUAelo2udy9ECPR_Asol = {
+
+	fId : "OPOBWjKUAelo2udy9ECPR",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Asol_form;
+		for (var i=0; i < vForm.OPOBWjKUAelo2udy9ECPR_Asol_input.length; i++) {
+			vForm.OPOBWjKUAelo2udy9ECPR_Asol_input[i].disabled = true;
+			vForm.OPOBWjKUAelo2udy9ECPR_Asol_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("OPOBWjKUAelo2udy9ECPR_Asol_in"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("OPOBWjKUAelo2udy9ECPR_Asol_N_responseTi"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("OPOBWjKUAelo2udy9ECPR_Asol_SN42");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Asol_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.OPOBWjKUAelo2udy9ECPR_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.OPOBWjKUAelo2udy9ECPR_Asol_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.OPOBWjKUAelo2udy9ECPR_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 1);
+				vForm.OPOBWjKUAelo2udy9ECPR_Asol_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("OPOBWjKUAelo2udy9ECPR_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = OPOBWjKUAelo2udy9ECPR_Asol;
+scOnUnloads[scOnUnloads.length] = OPOBWjKUAelo2udy9ECPR_Asol;
+</script><div id="OPOBWjKUAelo2udy9ECPR_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h4 class="question_ti"><span>&Eacute;nonc&eacute;</span></h4><div class="rBk "><p>Puis-je trouver un SmartPhone avec Windows 10&nbsp;? </p></div></div><div class="score"><h4 class="score_ti"><span>R&eacute;sultat</span></h4><div class="scoreEval " aria-live="polite"><div id="OPOBWjKUAelo2udy9ECPR_Asol_SN42"><span></span></div></div></div><div class="sol"><h4 class="sol_ti"><span>Correction</span></h4><div id="OPOBWjKUAelo2udy9ECPR_Asol_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></div><form action name="OPOBWjKUAelo2udy9ECPR_Asol_form" id="OPOBWjKUAelo2udy9ECPR_Asol_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Asol_input" id="OPOBWjKUAelo2udy9ECPR_Asol_in0" value="0" onclick="OPOBWjKUAelo2udy9ECPR_Asol.setResp(this, 0);" aria-labelledby="OPOBWjKUAelo2udy9ECPR_Asol_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Asol_sol" id="OPOBWjKUAelo2udy9ECPR_Asol_sol0" value disabled aria-labelledby="OPOBWjKUAelo2udy9ECPR_Asol_lbl0"></div><div class="choiceList_la " id="OPOBWjKUAelo2udy9ECPR_Asol_lbl0"><div class="choice"><div class="label"><p>Oui</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Asol_input" id="OPOBWjKUAelo2udy9ECPR_Asol_in1" value="1" onclick="OPOBWjKUAelo2udy9ECPR_Asol.setResp(this, 1);" aria-labelledby="OPOBWjKUAelo2udy9ECPR_Asol_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Asol_sol" id="OPOBWjKUAelo2udy9ECPR_Asol_sol1" value disabled aria-labelledby="OPOBWjKUAelo2udy9ECPR_Asol_lbl1"></div><div class="choiceList_la " id="OPOBWjKUAelo2udy9ECPR_Asol_lbl1"><div class="choice"><div class="label"><p>Non</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Asol_input" id="OPOBWjKUAelo2udy9ECPR_Asol_in2" value="2" onclick="OPOBWjKUAelo2udy9ECPR_Asol.setResp(this, 2);" aria-labelledby="OPOBWjKUAelo2udy9ECPR_Asol_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Asol_sol" id="OPOBWjKUAelo2udy9ECPR_Asol_sol2" value disabled aria-labelledby="OPOBWjKUAelo2udy9ECPR_Asol_lbl2"></div><div class="choiceList_la " id="OPOBWjKUAelo2udy9ECPR_Asol_lbl2"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var TYevA0P2zKb6t584kYxSRg_Asol = {
+
+	fId : "TYevA0P2zKb6t584kYxSRg",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "" : {
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Asol_form;
+		for (var i=0; i < vForm.TYevA0P2zKb6t584kYxSRg_Asol_input.length; i++) {
+			vForm.TYevA0P2zKb6t584kYxSRg_Asol_input[i].disabled = true;
+			vForm.TYevA0P2zKb6t584kYxSRg_Asol_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("TYevA0P2zKb6t584kYxSRg_Asol_in"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("TYevA0P2zKb6t584kYxSRg_Asol_N_responseTi"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("TYevA0P2zKb6t584kYxSRg_Asol_SN42");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Asol_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.TYevA0P2zKb6t584kYxSRg_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.TYevA0P2zKb6t584kYxSRg_Asol_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.TYevA0P2zKb6t584kYxSRg_Asol_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 2);
+				vForm.TYevA0P2zKb6t584kYxSRg_Asol_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("TYevA0P2zKb6t584kYxSRg_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = TYevA0P2zKb6t584kYxSRg_Asol;
+scOnUnloads[scOnUnloads.length] = TYevA0P2zKb6t584kYxSRg_Asol;
+</script><div id="TYevA0P2zKb6t584kYxSRg_Asol_A" style="display:none;"><div class="solBody"><div class="question"><h4 class="question_ti"><span>&Eacute;nonc&eacute;</span></h4><div class="rBk "><p>O&ugrave; a &eacute;t&eacute; cr&eacute;&eacute; l'entreprise Microsoft&nbsp;?</p></div></div><div class="score"><h4 class="score_ti"><span>R&eacute;sultat</span></h4><div class="scoreEval " aria-live="polite"><div id="TYevA0P2zKb6t584kYxSRg_Asol_SN42"><span></span></div></div></div><div class="sol"><h4 class="sol_ti"><span>Correction</span></h4><div id="TYevA0P2zKb6t584kYxSRg_Asol_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></div><form action name="TYevA0P2zKb6t584kYxSRg_Asol_form" id="TYevA0P2zKb6t584kYxSRg_Asol_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_input" id="TYevA0P2zKb6t584kYxSRg_Asol_in0" value="0" onclick="TYevA0P2zKb6t584kYxSRg_Asol.setResp(this, 0);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_sol" id="TYevA0P2zKb6t584kYxSRg_Asol_sol0" value disabled aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl0"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Asol_lbl0"><div class="choice"><div class="label"><p>A l'universit&eacute; d'Harvard</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_input" id="TYevA0P2zKb6t584kYxSRg_Asol_in1" value="1" onclick="TYevA0P2zKb6t584kYxSRg_Asol.setResp(this, 1);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_sol" id="TYevA0P2zKb6t584kYxSRg_Asol_sol1" value disabled aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl1"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Asol_lbl1"><div class="choice"><div class="label"><p>Dans le garage de Bill Gates</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_input" id="TYevA0P2zKb6t584kYxSRg_Asol_in2" value="2" onclick="TYevA0P2zKb6t584kYxSRg_Asol.setResp(this, 2);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_sol" id="TYevA0P2zKb6t584kYxSRg_Asol_sol2" value disabled aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl2"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Asol_lbl2"><div class="choice"><div class="label"><p>Dans la base militaire de la zone 51</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_input" id="TYevA0P2zKb6t584kYxSRg_Asol_in3" value="3" onclick="TYevA0P2zKb6t584kYxSRg_Asol.setResp(this, 3);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl3"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Asol_sol" id="TYevA0P2zKb6t584kYxSRg_Asol_sol3" value disabled aria-labelledby="TYevA0P2zKb6t584kYxSRg_Asol_lbl3"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Asol_lbl3"><div class="choice"><div class="label"><p>Dans les locaux d'IBM</p></div></div></div></li></ul></form></div></div></div></div></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">1</span><span class="over">/</span><span class="total">1</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="autoEvalOS_3.html" target="_self" class="btnNav prevEval" title="Pr&eacute;c&eacute;dent (R&eacute;sultats du test)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="autoEvalOS_6.html" target="_self" class="btnNav nextEval" title="Suivant (Fin du test)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer");scImgMgr.init();</script>
+ </body>
+</html>

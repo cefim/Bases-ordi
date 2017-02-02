@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice d'auto-&eacute;valuation</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.101 / Opale 3.6.020">
+  <meta name="revision" content="2017-02-02 14:40">
+  <link rel="start" href="BasesOrdi.html" title="Fonctions de base d'un ordinateur">
+  <meta name="author" content="Julien Tissier ">
+  <meta name="date" content="16/01/2017">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"iyohokwe"};
+/*1*/ window.scLoadParams = {destUri:"/co/autoEvalOS_2.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article eval"><div class="hBk_co "><div class="evalBody"><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var kwH23o4FAcbPDIAwoeJTYh_Aeval = {
+
+	fId : "kwH23o4FAcbPDIAwoeJTYh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "init" : {
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Aeval_form;
+		for (var i=0; i < vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input.length; i++) {
+			vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input[i].disabled = false;
+			vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kwH23o4FAcbPDIAwoeJTYh_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+var vRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input.length; i++) if(vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input.length) ? vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Aeval_form;
+		for (var i=0; i < vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input.length; i++) {
+			vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input[i].disabled = true;
+			vForm.kwH23o4FAcbPDIAwoeJTYh_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kwH23o4FAcbPDIAwoeJTYh_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Aeval_form;
+		switch(this.fCurSeq) {
+
+	case "init" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.kwH23o4FAcbPDIAwoeJTYh_Aeval_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kwH23o4FAcbPDIAwoeJTYh_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kwH23o4FAcbPDIAwoeJTYh_Aeval;
+scOnUnloads[scOnUnloads.length] = kwH23o4FAcbPDIAwoeJTYh_Aeval;
+</script><div id="kwH23o4FAcbPDIAwoeJTYh_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"><div class="rBk "><p>Microsoft a d&eacute;velopp&eacute;&nbsp;: </p></div></div><div class="response" aria-live="polite"><form action name="kwH23o4FAcbPDIAwoeJTYh_Aeval_form" id="kwH23o4FAcbPDIAwoeJTYh_Aeval_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Aeval_input" id="kwH23o4FAcbPDIAwoeJTYh_Aeval_in0" value="0" onclick="kwH23o4FAcbPDIAwoeJTYh_Aeval.setResp(this, 0);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl0"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl0"><div class="choice"><div class="label"><p>Ubuntu</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Aeval_input" id="kwH23o4FAcbPDIAwoeJTYh_Aeval_in1" value="1" onclick="kwH23o4FAcbPDIAwoeJTYh_Aeval.setResp(this, 1);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl1"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl1"><div class="choice"><div class="label"><p>Android</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Aeval_input" id="kwH23o4FAcbPDIAwoeJTYh_Aeval_in2" value="2" onclick="kwH23o4FAcbPDIAwoeJTYh_Aeval.setResp(this, 2);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl2"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl2"><div class="choice"><div class="label"><p>Logitech</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Aeval_input" id="kwH23o4FAcbPDIAwoeJTYh_Aeval_in3" value="3" onclick="kwH23o4FAcbPDIAwoeJTYh_Aeval.setResp(this, 3);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl3"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl3"><div class="choice"><div class="label"><p>Windows</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="kwH23o4FAcbPDIAwoeJTYh_Aeval_input" id="kwH23o4FAcbPDIAwoeJTYh_Aeval_in4" value="4" onclick="kwH23o4FAcbPDIAwoeJTYh_Aeval.setResp(this, 4);" aria-labelledby="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl4"></div><div class="choiceList_la " id="kwH23o4FAcbPDIAwoeJTYh_Aeval_lbl4"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var IVXQzgxrkKf0ybywmbUKwf_Aeval = {
+
+	fId : "IVXQzgxrkKf0ybywmbUKwf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "init" : {
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Aeval_form;
+		for (var i=0; i < vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input.length; i++) {
+			vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input[i].disabled = false;
+			vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("IVXQzgxrkKf0ybywmbUKwf_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+var vRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input.length; i++) if(vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input.length) ? vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Aeval_form;
+		for (var i=0; i < vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input.length; i++) {
+			vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input[i].disabled = true;
+			vForm.IVXQzgxrkKf0ybywmbUKwf_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("IVXQzgxrkKf0ybywmbUKwf_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Aeval_form;
+		switch(this.fCurSeq) {
+
+	case "init" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.IVXQzgxrkKf0ybywmbUKwf_Aeval_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("IVXQzgxrkKf0ybywmbUKwf_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = IVXQzgxrkKf0ybywmbUKwf_Aeval;
+scOnUnloads[scOnUnloads.length] = IVXQzgxrkKf0ybywmbUKwf_Aeval;
+</script><div id="IVXQzgxrkKf0ybywmbUKwf_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"><div class="rBk "><p>Laquelle de ces versions de Windows n'a jamais exist&eacute;&nbsp;? </p></div></div><div class="response" aria-live="polite"><form action name="IVXQzgxrkKf0ybywmbUKwf_Aeval_form" id="IVXQzgxrkKf0ybywmbUKwf_Aeval_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Aeval_input" id="IVXQzgxrkKf0ybywmbUKwf_Aeval_in0" value="0" onclick="IVXQzgxrkKf0ybywmbUKwf_Aeval.setResp(this, 0);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl0"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl0"><div class="choice"><div class="label"><p>Windows 3.1</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Aeval_input" id="IVXQzgxrkKf0ybywmbUKwf_Aeval_in1" value="1" onclick="IVXQzgxrkKf0ybywmbUKwf_Aeval.setResp(this, 1);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl1"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl1"><div class="choice"><div class="label"><p>Windows millenium</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Aeval_input" id="IVXQzgxrkKf0ybywmbUKwf_Aeval_in2" value="2" onclick="IVXQzgxrkKf0ybywmbUKwf_Aeval.setResp(this, 2);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl2"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl2"><div class="choice"><div class="label"><p>Windows Server 2008</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Aeval_input" id="IVXQzgxrkKf0ybywmbUKwf_Aeval_in3" value="3" onclick="IVXQzgxrkKf0ybywmbUKwf_Aeval.setResp(this, 3);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl3"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl3"><div class="choice"><div class="label"><p>Windows 9</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IVXQzgxrkKf0ybywmbUKwf_Aeval_input" id="IVXQzgxrkKf0ybywmbUKwf_Aeval_in4" value="4" onclick="IVXQzgxrkKf0ybywmbUKwf_Aeval.setResp(this, 4);" aria-labelledby="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl4"></div><div class="choiceList_la " id="IVXQzgxrkKf0ybywmbUKwf_Aeval_lbl4"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var nKIcY3gQe8kWKOBXIG2LDb_Aeval = {
+
+	fId : "nKIcY3gQe8kWKOBXIG2LDb",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "init" : {
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Aeval_form;
+		for (var i=0; i < vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input.length; i++) {
+			vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input[i].disabled = false;
+			vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("nKIcY3gQe8kWKOBXIG2LDb_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+var vRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input.length; i++) if(vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input.length) ? vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Aeval_form;
+		for (var i=0; i < vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input.length; i++) {
+			vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input[i].disabled = true;
+			vForm.nKIcY3gQe8kWKOBXIG2LDb_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("nKIcY3gQe8kWKOBXIG2LDb_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Aeval_form;
+		switch(this.fCurSeq) {
+
+	case "init" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.nKIcY3gQe8kWKOBXIG2LDb_Aeval_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 4 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("nKIcY3gQe8kWKOBXIG2LDb_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = nKIcY3gQe8kWKOBXIG2LDb_Aeval;
+scOnUnloads[scOnUnloads.length] = nKIcY3gQe8kWKOBXIG2LDb_Aeval;
+</script><div id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"><div class="rBk "><p>Quel est le prix de Linux&nbsp;? </p></div></div><div class="response" aria-live="polite"><form action name="nKIcY3gQe8kWKOBXIG2LDb_Aeval_form" id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Aeval_input" id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_in0" value="0" onclick="nKIcY3gQe8kWKOBXIG2LDb_Aeval.setResp(this, 0);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl0"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl0"><div class="choice"><div class="label"><p>comme Windows, environ 150 &euro;</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Aeval_input" id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_in1" value="1" onclick="nKIcY3gQe8kWKOBXIG2LDb_Aeval.setResp(this, 1);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl1"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl1"><div class="choice"><div class="label"><p>environ 10&euro;</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Aeval_input" id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_in2" value="2" onclick="nKIcY3gQe8kWKOBXIG2LDb_Aeval.setResp(this, 2);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl2"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl2"><div class="choice"><div class="label"><p>environ 50 &euro;</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Aeval_input" id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_in3" value="3" onclick="nKIcY3gQe8kWKOBXIG2LDb_Aeval.setResp(this, 3);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl3"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl3"><div class="choice"><div class="label"><p>Il est gratuit </p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="nKIcY3gQe8kWKOBXIG2LDb_Aeval_input" id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_in4" value="4" onclick="nKIcY3gQe8kWKOBXIG2LDb_Aeval.setResp(this, 4);" aria-labelledby="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl4"></div><div class="choiceList_la " id="nKIcY3gQe8kWKOBXIG2LDb_Aeval_lbl4"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var OPOBWjKUAelo2udy9ECPR_Aeval = {
+
+	fId : "OPOBWjKUAelo2udy9ECPR",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "init" : {
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Aeval_form;
+		for (var i=0; i < vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input.length; i++) {
+			vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input[i].disabled = false;
+			vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("OPOBWjKUAelo2udy9ECPR_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+var vRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input.length; i++) if(vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input.length) ? vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Aeval_form;
+		for (var i=0; i < vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input.length; i++) {
+			vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input[i].disabled = true;
+			vForm.OPOBWjKUAelo2udy9ECPR_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("OPOBWjKUAelo2udy9ECPR_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Aeval_form;
+		switch(this.fCurSeq) {
+
+	case "init" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.OPOBWjKUAelo2udy9ECPR_Aeval_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("OPOBWjKUAelo2udy9ECPR_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = OPOBWjKUAelo2udy9ECPR_Aeval;
+scOnUnloads[scOnUnloads.length] = OPOBWjKUAelo2udy9ECPR_Aeval;
+</script><div id="OPOBWjKUAelo2udy9ECPR_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"><div class="rBk "><p>Puis-je trouver un SmartPhone avec Windows 10&nbsp;? </p></div></div><div class="response" aria-live="polite"><form action name="OPOBWjKUAelo2udy9ECPR_Aeval_form" id="OPOBWjKUAelo2udy9ECPR_Aeval_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Aeval_input" id="OPOBWjKUAelo2udy9ECPR_Aeval_in0" value="0" onclick="OPOBWjKUAelo2udy9ECPR_Aeval.setResp(this, 0);" aria-labelledby="OPOBWjKUAelo2udy9ECPR_Aeval_lbl0"></div><div class="choiceList_la " id="OPOBWjKUAelo2udy9ECPR_Aeval_lbl0"><div class="choice"><div class="label"><p>Oui</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Aeval_input" id="OPOBWjKUAelo2udy9ECPR_Aeval_in1" value="1" onclick="OPOBWjKUAelo2udy9ECPR_Aeval.setResp(this, 1);" aria-labelledby="OPOBWjKUAelo2udy9ECPR_Aeval_lbl1"></div><div class="choiceList_la " id="OPOBWjKUAelo2udy9ECPR_Aeval_lbl1"><div class="choice"><div class="label"><p>Non</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="OPOBWjKUAelo2udy9ECPR_Aeval_input" id="OPOBWjKUAelo2udy9ECPR_Aeval_in2" value="2" onclick="OPOBWjKUAelo2udy9ECPR_Aeval.setResp(this, 2);" aria-labelledby="OPOBWjKUAelo2udy9ECPR_Aeval_lbl2"></div><div class="choiceList_la " id="OPOBWjKUAelo2udy9ECPR_Aeval_lbl2"><div class="choice"><div class="label"><p>Je ne sais pas</p></div></div></div></li></ul></form></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Exercice</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var TYevA0P2zKb6t584kYxSRg_Aeval = {
+
+	fId : "TYevA0P2zKb6t584kYxSRg",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "init" : {
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Aeval_form;
+		for (var i=0; i < vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input.length; i++) {
+			vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input[i].disabled = false;
+			vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("TYevA0P2zKb6t584kYxSRg_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+var vRespSession = "eval";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input.length; i++) if(vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input.length) ? vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Aeval_form;
+		for (var i=0; i < vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input.length; i++) {
+			vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input[i].disabled = true;
+			vForm.TYevA0P2zKb6t584kYxSRg_Aeval_input[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("TYevA0P2zKb6t584kYxSRg_Aeval_in"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Aeval_form;
+		switch(this.fCurSeq) {
+
+	case "init" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.TYevA0P2zKb6t584kYxSRg_Aeval_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("TYevA0P2zKb6t584kYxSRg_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = TYevA0P2zKb6t584kYxSRg_Aeval;
+scOnUnloads[scOnUnloads.length] = TYevA0P2zKb6t584kYxSRg_Aeval;
+</script><div id="TYevA0P2zKb6t584kYxSRg_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"><div class="rBk "><p>O&ugrave; a &eacute;t&eacute; cr&eacute;&eacute; l'entreprise Microsoft&nbsp;?</p></div></div><div class="response" aria-live="polite"><form action name="TYevA0P2zKb6t584kYxSRg_Aeval_form" id="TYevA0P2zKb6t584kYxSRg_Aeval_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Aeval_input" id="TYevA0P2zKb6t584kYxSRg_Aeval_in0" value="0" onclick="TYevA0P2zKb6t584kYxSRg_Aeval.setResp(this, 0);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Aeval_lbl0"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Aeval_lbl0"><div class="choice"><div class="label"><p>A l'universit&eacute; d'Harvard</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Aeval_input" id="TYevA0P2zKb6t584kYxSRg_Aeval_in1" value="1" onclick="TYevA0P2zKb6t584kYxSRg_Aeval.setResp(this, 1);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Aeval_lbl1"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Aeval_lbl1"><div class="choice"><div class="label"><p>Dans le garage de Bill Gates</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Aeval_input" id="TYevA0P2zKb6t584kYxSRg_Aeval_in2" value="2" onclick="TYevA0P2zKb6t584kYxSRg_Aeval.setResp(this, 2);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Aeval_lbl2"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Aeval_lbl2"><div class="choice"><div class="label"><p>Dans la base militaire de la zone 51</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="TYevA0P2zKb6t584kYxSRg_Aeval_input" id="TYevA0P2zKb6t584kYxSRg_Aeval_in3" value="3" onclick="TYevA0P2zKb6t584kYxSRg_Aeval.setResp(this, 3);" aria-labelledby="TYevA0P2zKb6t584kYxSRg_Aeval_lbl3"></div><div class="choiceList_la " id="TYevA0P2zKb6t584kYxSRg_Aeval_lbl3"><div class="choice"><div class="label"><p>Dans les locaux d'IBM</p></div></div></div></li></ul></form></div></div></div></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">1</span><span class="over">/</span><span class="total">1</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="next" href="autoEvalOS_4.html" target="_self" class="btnNav nextEval" title="Suivant (Fin de l'&eacute;valuation)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer");scImgMgr.init();</script>
+ </body>
+</html>
